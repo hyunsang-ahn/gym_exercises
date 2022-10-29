@@ -2,7 +2,7 @@ npm install --legacy-peer-deps
 
 
 
-gym_exercises
+gym_exercisesd
 
 
 ⭐RapidAPI - https://rapidapi.com/hub?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel
