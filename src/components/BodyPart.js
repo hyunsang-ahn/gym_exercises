@@ -24,7 +24,10 @@ const BodyPart = (
                 gap: '47px'
             }
             }
-
+            onClick={() => {
+                setBodyParts(item)
+                window.scrollTop({ top: 1800, left: 100 })
+            }}
         >
             <img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px' }} />
             <Typography
