@@ -5,12 +5,12 @@ import HorizontalScrollbar from './HorizontalScrollbar'
 
 const SearchExercises = ({
     setExercises,
-    bodyParts,
-    setBodyParts,
+    bodyPart,
+    setBodyPart,
 }) => {
     const [search, setSearch] = useState('')
+    const [bodyParts, setBodyParts] = useState([]);
 
-    console.log('fetchExercisesData================', bodyParts)
     useEffect(() => {
         const fetchExercisesData = async () => {
             const bodyPartsData = await fetchData(
@@ -64,9 +64,10 @@ const SearchExercises = ({
             <Box sx={{ postion: 'relative', width: '100%', p: '20px' }}>
                 <HorizontalScrollbar
                     data={bodyParts}
+                    bodyParts
+                    bodyPart={bodyPart}
+                    setBodyPart={setBodyPart}
 
-                    bodyParts={bodyParts}
-                    setBodyParts={setBodyParts}
                 />
             </Box>
 
