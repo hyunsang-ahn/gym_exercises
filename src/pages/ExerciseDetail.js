@@ -17,10 +17,10 @@ const ExerciseDetail = () => {
     const { id } = useParams()
     useEffect(() => {
         const fetchExercisesData = async () => {
-            const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com/'
+            const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com'
             const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com'
 
-            const exerciseDetailData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`, exerciseOptions)
+            const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/exercise/${id}`, exerciseOptions)
             setExerciseDetail(exerciseDetailData)
 
             console.log(exerciseDetailData.name)
