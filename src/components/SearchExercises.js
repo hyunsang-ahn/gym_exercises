@@ -67,6 +67,7 @@ const SearchExercises = ({
                     bodyParts
                     bodyPart={bodyPart}
                     setBodyPart={setBodyPart}
+                    isBodyParts={true}
 
                 />
             </Box>
