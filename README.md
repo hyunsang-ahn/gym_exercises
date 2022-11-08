@@ -8,4 +8,4 @@ npm install --legacy-peer-deps
 
 배포 URL(https://www.netlify.com/ 이용)
 
-gym-project-hsahn.netlify.app
+gym-pjt.netlify.app
